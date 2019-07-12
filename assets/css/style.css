@@ -1,7 +1,7 @@
 
 /* Basic Styles */
 body {
-    background: grey;
+    background: #2e2e2e;
     font-family: objektiv-mk1, sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -50,7 +50,9 @@ main{
     font-style: normal;
     font-size:0.9rem;
 }
-
+hr {
+    background-color: white;
+}
 /* Nav Icon */
 .animated-icon2{
 width: 30px;
@@ -261,7 +263,7 @@ left: 50%;
     padding:0;
 }
 #partners .carousel-inner{
-    height: 450px;
+    height: 600px;
 }
 .partner-dimentions {
     width:100%;
