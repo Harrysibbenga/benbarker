@@ -1,3 +1,4 @@
+// Icon 
 $(document).ready(function () {
   $('.second-button').on('click', function () {
 
@@ -5,6 +6,7 @@ $(document).ready(function () {
   });
 });
 
+// Navbar grow
 $(window).scroll(function () {
   if($(this).scrollTop() >= 100) {
     $('.navbar').addClass('grow');
@@ -15,6 +17,7 @@ $(window).scroll(function () {
   }
 });
 
+// Carousel
 $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
   var next = $(this).next();
   if (!next.length) {
@@ -31,4 +34,25 @@ $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
   }
 });
 
+//  Year
 $("#year").text(new Date().getFullYear());
+
+// Archive gallary
+$(function() {
+  var selectedClass = "";
+  
+  $(".filter").click(function(){
+  
+    selectedClass = $(this).attr("data-rel");
+  
+  $("#gallery").fadeTo(100, 0.1);
+  
+  $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+  
+  setTimeout(function() {
+    $("."+selectedClass).fadeIn().addClass('animation');
+    $("#gallery").fadeTo(300, 1);
+    }, 300);
+  });
+  
+});
