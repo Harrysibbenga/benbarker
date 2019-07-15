@@ -372,6 +372,12 @@ left: 50%;
     height: 100%;
     padding: 300px 0;
 }
+.title-img {
+    width: 30px;
+}
+#artical h1.header-font {
+    font-size:1.5rem;
+}
 /* Archive */
 /* gallary */
 
@@ -397,6 +403,14 @@ left: 50%;
         height: 175px;
     }
 }
+@media (min-width:768px) {
+    .title-img {
+        width: 70px;
+    }
+    #artical h1.header-font {
+        font-size:2rem;
+    }
+}
 @media (min-width:768px) and (max-width:991px) {
     #partners .carousel-inner{
         height: 300px;
@@ -414,6 +428,14 @@ left: 50%;
         height: 44rem;
     }
 }
+@media (min-width:1024px) {
+    .title-img {
+        width: 100px;
+    }
+    #artical h1.header-font {
+        font-size:2.5rem;
+    }
+} 
 
 @media (min-width:1024px) and (max-width:1439px) {
     #partners .carousel-inner{
@@ -433,6 +455,12 @@ left: 50%;
     }
     .section-view {
         height: 44rem;
+    }
+    .title-img {
+        width: 150px;
+    }
+    #artical h1.header-font {
+        font-size:3rem;
     }
 }
 
