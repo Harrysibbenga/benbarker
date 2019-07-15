@@ -28,7 +28,7 @@
     <!-- Header section -->
     <header>
         <!--Navbar-->
-        <nav class="navbar fixed-top navbar-dark">
+        <nav class="navbar fixed-top navbar-dark" id="navbar">
         
             <!-- Navbar brand -->
             <a class="navbar-brand" href="./index.html">
@@ -36,13 +36,13 @@
             </a>
         
             <!-- Collapse button -->
-            <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23"
-            aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler second-button" type="button" data-toggle="collapse" data-target="#navbar-main"
+            aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
             <div class="animated-icon2"><span></span><span></span><span></span><span></span></div>
             </button>
         
             <!-- Collapsible content -->
-            <div class="collapse navbar-collapse text-right" id="navbarSupportedContent23">
+            <div class="collapse navbar-collapse text-right" id="navbar-main">
                 <!-- Links -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -58,7 +58,7 @@
                         <a class="nav-link" href="./index.html#partners">Partners</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="./index.html#contact">Contact</a>
                     </li>
                 </ul>
                 <!-- Links -->
@@ -72,8 +72,8 @@
     <main>
         <!-- Blogs Intro -->
         <section id="artical">
-            <div class="bg-container-articals parallax">
-                <div class="bg-artical1">
+            <div class="bg-container-articals">
+                <div class="bg-artical1 parallax">
                     <div class="artical-head-row row rgba-black-light">
                         <div class="artical-head-cont mx-auto my-5">
                             <h1 class="header-font wow fadeInDown" data-wow-duration="2">Barker completes Bathurst Hat-trick</h1>
@@ -88,13 +88,23 @@
         <section id="news-articals">
             <!-- Artical -->
             <div class="container">
-                <div class="row">
+                <div class="row my-5">
                     <p class="wow fadeInDown">Ben Barker continued his fine record at one of the toughest sportscar races of the year by guiding the Grove Racing team to another victory in the Bathurst 12 Hours.</p>
                     <p class="wow fadeInDown">Taking advantage of the winter break in his FIA World Endurance Championship programme, the Briton rejoined the crew of the #4 Porsche 911 GT3 Cup car for a fifth time, partnering Stephen and Brenton Grove in the now red-and-white machine, and helping to guide it to a third win in five years. The victory was also a third in the event for Barker, and the fourth in total for Grove, as the Australian team ensured back-to-back success after also winning its class in 2018.</p>
                     <p class="wow fadeInDown">As usual, the early practice sessions played a major part in Grove’s success, with Barker allowing his team-mates to get reacquainted with the fearsome Mount Panorama circuit before helping to dial in the set-up of the #4 machine.</p>
                     <p class="wow fadeInDown">“Knowing the team as well as I do after four previous outings together, we were immediately able to get on with sorting the handling of the car,” Barker explained, “With both Stephen and Brenton now familiar with Bathurst, each practice session allowed us to make further progress with the set-up so that the car wouldn’t be on a knife-edge come the race.”</p>
                     <p class="wow fadeInDown">Having set the Class B pace in most of the five practice sessions, Barker was also charged with the Grove team’s qualifying effort, and responded with a mark that was only a couple of tenths off the category’s lap record. The time – a 2min 06.45secs effort - was comfortably eight-tenths faster than the #4’s nearest rival, despite Barker completing the bare minimum of laps.</p>
                     <p class="wow fadeInDown">“The car felt great heading into qualifying, and I was able to really go for it,” Barker revealed, “The gap to second in class wasn’t quite as big as we enjoyed last year, but the team was still ‘stoked’ with the time, and it set us up nicely for the race.”</p>
+                </div>  
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img class="img-fluid" src="./assets/img/M19_0386_fine.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-fluid" src="./assets/img/M19_0402_fine.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row my-5">  
                     <p class="wow fadeInDown">As he had in 2018, the Cambridge native also took the start of the race which, with the 50-car field being flagged off in the middle of the night, proved to be the most tricky part of the 12-hour marathon for the Grove team. Having navigated the initial laps and retained the class lead, Barker began to pull away from its rivals as he used his affinity with Bathurst to maintain a pace few could match. With none of the dramas that affected its 2018 appearance, the race proved to be a largely uneventful one for the team, as Barker and his co-drivers cycled through their stints, keeping the #4 machine at the head of the Class B field throughout.</p>
                     <p class="wow fadeInDown">Even with eight safety car interruptions during the course of the 12 hours, the Grove team’s eventual margin of victory was a massive 20 laps, cementing the most comfortable victory of Barker’s trio at Bathurst.</p>
                     <p class="wow fadeInDown">“Once the opening few laps were out of the way, the race was quite enjoyable,” Barker confirmed, “The start is always a bit hairy, with 50 cars being unleashed in pitch black conditions. The lights on the Porsche aren’t the best, and this unforgiving track certainly needs respect – perhaps more than any other I race on – and even more so at night.</p>
@@ -102,6 +112,15 @@
                     <p class="wow fadeInDown">“This was a fantastic result for everyone involved, and I’m grateful to the Grove family for inviting me back year after year. I’m delighted that we were able to deliver another victory, and on a great weekend for Porsche as a whole as my good friend Earl Bamber and his team took the overall victory. I’d also like to thank Luparg and Sacred for making this weekend possible and look forward to returning in 12 months’ time for another crack at the podium.”</p>
                     <p class="wow fadeInDown">Barker’s FIA WEC campaign will restart in March at the 1000 Mile of Sebring, where he will rejoin the Gulf Racing team.</p>
                 </div>
+                <div class="row mb-5">
+                    <div class="col-sm-6">
+                        <img class="img-fluid" src="./assets/img/M19_0365_fine.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <img class="img-fluid" src="./assets/img/M19_0389_fine.jpg" alt="">
+                    </div>
+                </div>
+                <a href="./blog.html" class="text-center btn btn-block mt-2">More Stories <i class="fas fa-angle-right"></i><i class="fas fa-angle-right"></i></a>
             </div>
             <!-- /.Artical -->
         </section>

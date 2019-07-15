@@ -54,5 +54,8 @@ $(function() {
     $("#gallery").fadeTo(300, 1);
     }, 300);
   });
-  
+
 });
+
+// Scrollspy
+$('body').scrollspy({ target: '#navbar-scroll' });
