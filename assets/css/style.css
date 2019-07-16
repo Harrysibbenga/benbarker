@@ -56,6 +56,16 @@ hr {
 .par-view {
     height:100vh;
 }
+#about .container-fluid:nth-child(2) {
+    background-color: #000000;
+    height: 40rem;
+    transform: skewY(2deg);
+    position: relative;
+    bottom: 15rem;
+}
+#about .container-fluid .container-fluid{
+    transform:skewY(-2deg);
+}
 /* Parallax */
 .parallax {
     position: relative;
@@ -253,6 +263,7 @@ left: 50%;
     overflow: hidden;
     cursor: default;
     height:80rem;
+    background: url('../img/M18_4002_fine.png');
 }
 
 .background-img {
