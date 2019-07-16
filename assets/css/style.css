@@ -20,13 +20,7 @@ main{
 .container-fluid {
     padding:0;
 }
-.parallax { 
-    height:100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 .max-img{
     width:100%;
     height:100%;
@@ -53,9 +47,7 @@ main{
 hr {
     background-color: white;
 }
-.par-view {
-    height:100vh;
-}
+
 #about .container-fluid:nth-child(2) {
     background-color: #000000;
     height: 40rem;
@@ -67,17 +59,24 @@ hr {
     transform:skewY(-2deg);
 }
 /* Parallax */
-.parallax {
-    position: relative;
+.parallax { 
+    height:100%;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
+}
+.par-view {
+    height:100vh;
 }
 .par1 {
     background-image: url('../img/M19_0389_fine.jpg');
 }
 .par2 {
     background-image: url('../img/86(4).jpg');
+}
+.par3 {
+    background: url('../img/M18_4002_fine.png');
 }
 /* Nav Icon */
 .animated-icon2{
@@ -258,21 +257,8 @@ left: 50%;
     -webkit-box-shadow: 0 27px 24px 0 rgba(240, 5, 5,.2),0 20px 50px 0 rgba(0,0,0,.22)!important;
     box-shadow: 0 27px 24px 0 rgba(240, 5, 5, 0.2),0 20px 50px 0 rgba(0,0,0,.22)!important;
 }
-.section-view {
-    position: relative;
-    overflow: hidden;
-    cursor: default;
-    height:80rem;
-    background: url('../img/M18_4002_fine.png');
-}
 
-.background-img {
-    position: absolute;
-    width:100%;
-    height:100%;
-    opacity:0.1;
 
-}
 #about .col-sm-6.col-lg-3.offset-lg-1 {
     padding-bottom:4rem;
 }
