@@ -303,8 +303,10 @@ left: 50%;
 
 /* About */
 #about #about-text{
-    order:2;
     text-align: center;
+}
+#about .max-img {
+    padding-top: 10rem;
 }
 #about .par-view {
     height:90rem;
@@ -366,7 +368,7 @@ left: 50%;
     padding:0;
 }
 #partners {
-    height: 540px;
+    height: 42rem;
 }
 .partner-dimentions {
     width:70%;
@@ -464,7 +466,31 @@ footer.page-footer {
 /* Media */
 @media (min-width:576px) and (max-width:767px) {
     #partners {
-        height: 175px;
+        height: 20rem;
+    }
+    #about #about-text{
+        order:0;
+        text-align: right;
+    }
+}
+@media (min-width:576px) and (max-width:682px){
+    #about .par-view {
+        height:62rem;
+    }
+    #about .max-img {
+        padding-top: 27.5rem;
+    }
+}
+@media (min-width:683px) and (max-width:767px) {
+    #about #about-text{
+        order:0;
+        text-align: right;
+    }
+    #about .par-view {
+        height:62rem;
+    }
+    #about .max-img {
+        padding-top: 22.5rem;
     }
 }
 @media (min-width:768px) {
@@ -477,7 +503,7 @@ footer.page-footer {
 }
 @media (min-width:768px) and (max-width:991px) {
     #partners {
-        height: 300px;
+        height: 22rem;
     }
     .section-view {
         height: 48rem;
@@ -489,14 +515,14 @@ footer.page-footer {
     #about .par-view {
         height:55rem;
     }
+    #about .max-img {
+        padding-top: 12rem;
+    }
 }
 
 @media (min-width:992px) and (max-width:1023px) {
     #partners {
-        height: 250px;
-    }
-    .section-view {
-        height: 44rem;
+        height: 22rem;;
     }
     #about #about-text{
         order:0;
@@ -504,6 +530,9 @@ footer.page-footer {
     }
     #about .par-view {
         height:55rem;
+    }
+    #about .max-img {
+        padding-top: 2rem;
     }
 }
 @media (min-width:1024px) {
@@ -517,7 +546,7 @@ footer.page-footer {
 
 @media (min-width:1024px) and (max-width:1439px) {
     #partners {
-        height: 240px;
+        height: 25rem;
     }
     .section-view {
         height: 44rem;
@@ -533,13 +562,10 @@ footer.page-footer {
 
 @media (min-width:1440px) {
     #partners {
-        height: 300px;
+        height: 30rem;
     }
     #about-text {
         padding-top: 5rem;
-    }
-    .section-view {
-        height: 44rem;
     }
     .title-img {
         width: 150px;
