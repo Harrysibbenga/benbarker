@@ -1,12 +1,12 @@
 
 /* Basic Styles */
 body {
-    background: #2e2e2e;
     font-family: objektiv-mk1, sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size:0.9rem;
     color:white;
+    background-color:white;
 }
 main{
     height:100%;
@@ -48,15 +48,70 @@ hr {
     background-color: white;
 }
 
-#about .container-fluid:nth-child(2) {
-    background-color: #000000;
-    height: 40rem;
-    transform: skewY(2deg);
+/* Slanted */
+.slantedA{
     position: relative;
-    bottom: 15rem;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: #2E2E2E;
+    color: white;
+    margin-bottom: 5rem;
 }
-#about .container-fluid .container-fluid{
-    transform:skewY(-2deg);
+
+.slantedA:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(4deg);
+}
+
+.slantedB{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 30px;
+    color: black;
+}
+
+.slantedB:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom;
+    transform: skewY(4deg);
+}
+
+.slantedC{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 30px;
+    color: white;
+    transform: skewY(4deg);
+}
+.correctionC {
+    transform: skewY(-4deg);
+    margin-bottom: 5rem;
 }
 /* Parallax */
 .parallax { 
@@ -76,8 +131,9 @@ hr {
     background-image: url('../img/86(4).jpg');
 }
 .par3 {
-    background: url('../img/M18_4002_fine.png');
+    background-image: url('../img/M18_4002_fine.png');
 }
+
 /* Nav Icon */
 .animated-icon2{
 width: 30px;
@@ -157,13 +213,13 @@ left: 50%;
     transition: all 0.2s ease-in; 
 }
 .nav-logo.grow {
-    width:5rem;
-    height:5rem;
+    width:6rem;
+    height:6rem;
     transition: all 0.2s ease-in; 
 }
 .nav-logo {
-    width:3rem;
-    height:3rem;
+    width:5rem;
+    height:5rem;
     transition: all 0.2s ease-in; 
 }
 .animated-icon2 span:hover {
@@ -244,6 +300,9 @@ left: 50%;
 }
 
 /* About */
+#about .par-view {
+    height:50rem;
+}
 #about h2.header-font{
     font-size: 1.8rem;
 }
@@ -257,7 +316,6 @@ left: 50%;
     -webkit-box-shadow: 0 27px 24px 0 rgba(240, 5, 5,.2),0 20px 50px 0 rgba(0,0,0,.22)!important;
     box-shadow: 0 27px 24px 0 rgba(240, 5, 5, 0.2),0 20px 50px 0 rgba(0,0,0,.22)!important;
 }
-
 
 #about .col-sm-6.col-lg-3.offset-lg-1 {
     padding-bottom:4rem;
@@ -296,15 +354,17 @@ left: 50%;
 }
 
 /* Partners */
+#partners .header-font {
+    color:black;
+}
 #partners .col-sm-6{
     padding:0;
 }
-#partners .carousel-inner{
+#partners {
     height: 540px;
 }
 .partner-dimentions {
-    width:100%;
-    height: 100%;
+    width:70%;
     padding:2rem;
 }
 
@@ -326,7 +386,9 @@ left: 50%;
     transition: all 0.5s ease-in;
     color:red;
 }
-
+footer.page-footer {
+    color:black;
+}
 /* Blogs Page */
 #blogs {
     height:50rem;
@@ -396,7 +458,7 @@ left: 50%;
 }
 /* Media */
 @media (min-width:576px) and (max-width:767px) {
-    #partners .carousel-inner{
+    #partners {
         height: 175px;
     }
 }
@@ -409,7 +471,7 @@ left: 50%;
     }
 }
 @media (min-width:768px) and (max-width:991px) {
-    #partners .carousel-inner{
+    #partners {
         height: 300px;
     }
     .section-view {
@@ -418,7 +480,7 @@ left: 50%;
 }
 
 @media (min-width:992px) and (max-width:1023px) {
-    #partners .carousel-inner{
+    #partners {
         height: 250px;
     }
     .section-view {
@@ -435,7 +497,7 @@ left: 50%;
 } 
 
 @media (min-width:1024px) and (max-width:1439px) {
-    #partners .carousel-inner{
+    #partners {
         height: 240px;
     }
     .section-view {
@@ -444,7 +506,7 @@ left: 50%;
 }
 
 @media (min-width:1440px) {
-    #partners .carousel-inner{
+    #partners {
         height: 300px;
     }
     #about-text {
@@ -466,7 +528,7 @@ left: 50%;
 }
 
 @media (min-width:1920px) and (max-width:2559px) {
-    #partners .carousel-inner{
+    #partners {
         height: 380px;
     }
     .section-view {
@@ -474,7 +536,7 @@ left: 50%;
     }
 }
 @media (min-width:2560px) {
-    #partners .carousel-inner{
+    #partners {
         height: 450px;
     }
     .section-view {
