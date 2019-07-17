@@ -133,7 +133,9 @@ hr {
 .par3 {
     background-image: url('../img/M18_4002_fine.png');
 }
-
+.par4 {
+    background-image: url('../img/M18_0385_fine.png');
+}
 /* Nav Icon */
 .animated-icon2{
 width: 30px;
@@ -300,8 +302,12 @@ left: 50%;
 }
 
 /* About */
+#about #about-text{
+    order:2;
+    text-align: center;
+}
 #about .par-view {
-    height:50rem;
+    height:90rem;
 }
 #about h2.header-font{
     font-size: 1.8rem;
@@ -309,21 +315,20 @@ left: 50%;
 #about h4.sub-head{
     font-size: 1.1rem;
 }
-#about-img img, #img-backing img{
-    border-radius: 50%;
-}
 .img-depth {
     -webkit-box-shadow: 0 27px 24px 0 rgba(240, 5, 5,.2),0 20px 50px 0 rgba(0,0,0,.22)!important;
     box-shadow: 0 27px 24px 0 rgba(240, 5, 5, 0.2),0 20px 50px 0 rgba(0,0,0,.22)!important;
 }
-
 #about .col-sm-6.col-lg-3.offset-lg-1 {
     padding-bottom:4rem;
+}
+#about .correctionC{
+    margin:0;
 }
 
 /* News */
 #news .col-lg-6{
-    padding: 0;
+    padding: 2rem;
 }
 
 #news .img-fluid #news-articals .img-fluid{
@@ -477,6 +482,13 @@ footer.page-footer {
     .section-view {
         height: 48rem;
     }
+    #about #about-text{
+        order:0;
+        text-align: right;
+    }
+    #about .par-view {
+        height:55rem;
+    }
 }
 
 @media (min-width:992px) and (max-width:1023px) {
@@ -485,6 +497,13 @@ footer.page-footer {
     }
     .section-view {
         height: 44rem;
+    }
+    #about #about-text{
+        order:0;
+        text-align: right;
+    }
+    #about .par-view {
+        height:55rem;
     }
 }
 @media (min-width:1024px) {
@@ -502,6 +521,13 @@ footer.page-footer {
     }
     .section-view {
         height: 44rem;
+    }
+    #about #about-text{
+        order:0;
+        text-align: right;
+    }
+    #about .par-view {
+        height:55rem;
     }
 }
 
@@ -524,15 +550,25 @@ footer.page-footer {
 }
 
 @media (min-width:1440px) and (max-width:1919px) {
-    
+    #about #about-text{
+        order:0;
+        text-align: right;
+    }
+    #about .par-view {
+        height:55rem;
+    }
 }
 
 @media (min-width:1920px) and (max-width:2559px) {
     #partners {
         height: 380px;
     }
-    .section-view {
-        height: 55rem;
+    #about #about-text{
+        order:0;
+        text-align: right;
+    }
+    #about .par-view {
+        height:55rem;
     }
 }
 @media (min-width:2560px) {
@@ -541,5 +577,12 @@ footer.page-footer {
     }
     .section-view {
         height: 60rem;
+    }
+    #about #about-text{
+        order:0;
+        text-align: right;
+    }
+    #about .par-view {
+        height:55rem;
     }
 }
