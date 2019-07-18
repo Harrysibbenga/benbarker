@@ -17,6 +17,13 @@ $(window).scroll(function () {
   }
 });
 
+// Navbar effect 
+$(document).ready(function (){
+  if($('.navbar-toggler').click( function (){
+    $(this).parent().toggleClass("navbar-expand-md");
+  })); 
+});
+
 // Carousel
 $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
   var next = $(this).next();
@@ -59,3 +66,22 @@ $(function() {
 
 // Scrollspy
 $('body').scrollspy({ target: '#navbar-scroll' });
+
+// Lightbox
+$(document).on('click', '[data-toggle="lightbox"]', '[data-gallary="gallary"]', function(event) {
+  event.preventDefault();
+  return $(this).ekkoLightbox({
+      wrapping: false,
+      onShown: function() {
+          if (window.console) {
+              return console.log('Checking our the events huh?');
+          }
+      },
+      onNavigate: function(direction, itemIndex) {
+          if (window.console) {
+              return console.log('Navigating '+direction+'. Current item: '+itemIndex);
+          }
+      }
+  });
+});
+

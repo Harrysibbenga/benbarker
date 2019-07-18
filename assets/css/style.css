@@ -231,7 +231,6 @@ left: 50%;
 .navbar-nav .nav-item .nav-link:hover {
     color:red !important;
 }
-
 /* Introduction */
 .bg-container-intro {
     height:750px;
@@ -464,12 +463,20 @@ footer.page-footer {
     font-size: 1rem;
 }
 /* News Gallery */
+
 @media (min-width: 768px) {
     .carousel-multi-item-2 .col-md-3 {
     float: left;
     width: 25%;
-    max-width: 100%; } }
-    
+    max-width: 100%; } 
+    .navbar-toggler {
+        order:2;
+    }
+    .navbar-expand-md .navbar-toggler {
+        display: inline-block;
+    }
+    .collapseExample {transition: none;}
+}
 .carousel-multi-item-2 .card img {
 border-radius: 2px; }
 
