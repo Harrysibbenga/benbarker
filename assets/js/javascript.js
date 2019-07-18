@@ -1,3 +1,4 @@
+// Smooth scroll
 $("#navbar a[href^='#']").on('click', function(event) {
   var target = this.hash;
 
@@ -11,3 +12,4 @@ $("#navbar a[href^='#']").on('click', function(event) {
     return window.history.pushState(null, null, target);
   });
 });
+

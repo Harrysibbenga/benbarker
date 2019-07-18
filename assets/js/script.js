@@ -37,7 +37,7 @@ $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
 //  Year
 $("#year").text(new Date().getFullYear());
 
-// Archive gallary
+// Archive gallery
 $(function() {
   var selectedClass = "";
   
